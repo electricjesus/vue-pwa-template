@@ -1,7 +1,7 @@
 {
-  "name": "pwa",
-  "description": "a vue.js template.",
-  "author": "seth <seth.malaki@gmail.com>",
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "node server",
