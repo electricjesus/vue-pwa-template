@@ -17,6 +17,7 @@
  - vue-router, vuex
  - compatible with vue-devtools
  - linting using [StandardJS](http://standardjs.com/)
+ - you only need to update `logo.png` to change favicon and PWA assets
 
 ### getting started
 

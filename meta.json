@@ -1,0 +1,134 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "pwa_short_name": {
+      "type": "string",
+      "required": true,
+      "label": "Short name to display on home screens"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "pwa_display": {
+      "type": "list",
+      "message": "[PWA] Display mode for your Progressive Web App (see https://developer.mozilla.org/en-US/docs/Web/Manifest#display)",
+      "choices": [
+        {
+          "name": "Fullscreen - All of the available display area is used and no user agent chrome is shown.",
+          "value": "fullscreen",
+          "short": "fullscreen"
+        },
+        {
+          "name": "Standalone - The application will look and feel like a standalone application. This is the usual choice.",
+          "value": "standalone",
+          "short": "standalone"
+        },
+        {
+          "name": "Minimal UI - The application will look and feel like a standalone application, but will have a minimal set of UI elements for controlling navigation.",
+          "value": "minimal-ui",
+          "short": "minimal-ui"
+        },
+        {
+          "name": "Browser - The application opens in a conventional browser tab or new window. ¯\_(ツ)_/¯",
+          "value": "browser",
+          "short": "browser"
+        }
+      ],
+      "default": "standalone"
+    },
+    "pwa_theme_color": {
+      "type": "string",
+      "label": "[PWA] Theme Color (for your PWA. e.g. #FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    "pwa_background_color": {
+      "type": "string",
+      "label": "[PWA] Background Color (for your PWA. e.g. #FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    "pwa_dir": {
+      "type": "list",
+      "message": "[PWA] Specify primary text direction for your app",
+      "choices": [
+        {
+          "name": "Automatic - browser will make a best guess about the text's direction. (default)",
+          "value": "auto",
+          "short": "auto"
+        },
+        {
+          "name": "Left-to-right",
+          "value": "ltr",
+          "short": "ltr"
+        },
+        {
+          "name": "Right-to-left",
+          "value": "rtl",
+          "short": "rtl"
+        }
+      ]
+    },
+    "pwa_lang": {
+      "type": "string",
+      "label": "[PWA] ISO-639-1 Language (Default is 'en'. See here: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)",
+      "default": "en"
+    },
+    "pwa_orientation": {
+      "type": "list",
+      "message": "[PWA] Orientation to use (See https://developer.mozilla.org/en-US/docs/Web/Manifest#orientation)",
+      "choices": [
+        {
+          "name": "any",
+          "value": "any",
+          "short": "any"
+        },
+        {
+          "name": "natural",
+          "value": "natural",
+          "short": "natural"
+        },
+        {
+          "name": "landscape only",
+          "value": "landscape",
+          "short": "landscape"
+        },
+        {
+          "name": "landscape-primary",
+          "value": "landscape-primary",
+          "short": "landscape-primary"
+        },
+        {
+          "name": "landscape-secondary",
+          "value": "landscape-secondary",
+          "short": "landscape-secondary"
+        },
+        {
+          "name": "portrait only",
+          "value": "portrait",
+          "short": "portrait"
+        },
+        {
+          "name": "portrait-primary",
+          "value": "portrait-primary",
+          "short": "portrait-primary"
+        },
+        {
+          "name": "portrait-secondary",
+          "value": "portrait-secondary",
+          "short": "portrait-secondary"
+        }
+      ]
+    }
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev"
+}
