@@ -40,7 +40,7 @@
           "short": "minimal-ui"
         },
         {
-          "name": "Browser - The application opens in a conventional browser tab or new window. ¯\_(ツ)_/¯",
+          "name": "Browser - The application opens in a conventional browser tab or new window.",
           "value": "browser",
           "short": "browser"
         }
