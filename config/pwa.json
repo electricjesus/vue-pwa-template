@@ -1,0 +1,9 @@
+{
+    "name": "{{ pwa_short_name }}"
+    "background_color": "{{ pwa_background_color }}",
+    "theme_color": "{{ pwa_theme_color }}",
+    "display": "{{ pwa_display }}",
+    "dir": "{{ pwa_dir }}",
+    "lang": "{{ pwa_lang }}",
+    "orientation": "{{ pwa_orientation }}"
+}

@@ -1,7 +1,7 @@
 {
-  "name": "@mewe/k",
-  "description": "client deployment system for coinspectapp",
-  "author": "Seth <seth@mewe.org>",
+  "name": "pwa",
+  "description": "a vue.js template.",
+  "author": "seth <seth.malaki@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node server",
@@ -20,9 +20,11 @@
     "es6-promise": "^3.2.1",
     "express": "^4.14.0",
     "html-webpack-plugin": "^2.24.1",
+    "imagemagick-native": "^1.9.3",
+    "lodash": "^4.17.2",
     "lru-cache": "^4.0.1",
     "serialize-javascript": "^1.3.0",
-    "serve-favicon": "^2.3.0",
+    "serve-favicon": "^2.3.2",
     "vue": "^2.0.0",
     "vue-router": "^2.0.0",
     "vue-server-renderer": "^2.0.0",

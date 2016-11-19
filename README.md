@@ -1,29 +1,26 @@
-# k
+# pwa
 
-client provisioning tool.
+> a vue template.
+
+### features
+
+1. production features
+
+ - server-side rendering
+ - service workers
+ - automatic favicon, and pwa assets
+
+2.  developer features
+
+ - webpack 2
+ - hot module replacement
+ - vue-router, vuex
+ - compatible with vue-devtools
+ - linting using [StandardJS](http://standardjs.com/)
 
 ### getting started
 
-#### development
+    vue init electricjesus/pwa myproject
 
-npm only:
-
-    npm install
-    npm run dev
-
-or with [yarn](https://yarnpkg.com/):
-    
-    npm install -g yarn
-    yarn
-    npm run dev
-
-#### production
-
-  npm run build
-    docker build -t mewe/k .
-    docker-compose up
-
-## development
-
-> written with ❤ for meweinc / coinspectapp
+> written with ❤ by meweinc / seth
 > built with vuejs 2.0
