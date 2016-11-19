@@ -1,0 +1,19 @@
+{
+  "name": "pwa-vue-template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "a vue.js template. full-featured Webpack 2 setup with hot-reload, lint-on-save, css-extraction. Also includes vue-router, vuex, automatic pwa assets.",
+  "author": "Seth Malaki <seth.malaki@gmail.com",
+  "contributors": [
+    "Seth Malaki <seth@mewe.org>"
+  ],
+  "private": true,
+  "bugs": {
+    "url" : "https://github.com/electricjesus/pwa-vue-template/issues", 
+    "email" : "seth.malaki@gmail.com"
+  },
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/electricjesus/pwa-vue-template.git"
+  }
+}
