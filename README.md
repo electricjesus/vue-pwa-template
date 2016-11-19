@@ -23,5 +23,6 @@
 
     vue init electricjesus/vue-pwa-template myproject
 
-> written with ❤ by meweinc / seth
+> written with ❤ by meweinc/seth
+
 > built with vuejs 2.0
