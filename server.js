@@ -65,7 +65,7 @@ app.get('*', (req, res) => {
     return res.end('waiting for compilation... refresh in a moment.')
   }
 
-  res.setHeader("Content-Type", "text/html");
+  res.setHeader('Content-Type', 'text/html')
   var s = Date.now()
   const context = { url: req.url }
   const renderStream = renderer.renderToStream(context)

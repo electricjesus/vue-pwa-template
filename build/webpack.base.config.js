@@ -27,6 +27,12 @@ module.exports = {
     noParse: /es6-promise\.js$/, // avoid webpack shimming process
     rules: [
       {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueConfig
