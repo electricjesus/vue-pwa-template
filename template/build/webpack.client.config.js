@@ -37,6 +37,10 @@ if (process.env.NODE_ENV === 'production') {
     stylus: ExtractTextPlugin.extract({
       loader: 'css-loader!stylus-loader',
       fallbackLoader: 'vue-style-loader' // <- this is a dep of vue-loader
+    }),
+    sass: ExtractTextPlugin.extract({
+      loader: 'css-loader!sass-loader',
+      fallbackLoader: 'vue-style-loader'
     })
   }
 
@@ -46,6 +50,8 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     }),
+    // dedupe
+    new webpack.optimize.DedupePlugin(),
     // minify JS
     new webpack.optimize.UglifyJsPlugin({
       compress: {
