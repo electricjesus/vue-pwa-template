@@ -24,7 +24,7 @@
     <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
   </div>
 </template>
-<style>
+<style scoped>
   div.content {
     margin: 10px 20px
   }
