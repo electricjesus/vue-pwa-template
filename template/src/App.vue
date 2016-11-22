@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <header>
-      <div class="inner">
-        <router-link to="/" exact>
-          <img class="logo" src="/logo-48.png" alt="logo">
-        </router-link>
-        <router-link to="/">Home</router-link>
-      </div>
-    </header>
+    <navigation></navigation>
     <transition name="fade" mode="out-in">
       <router-view class="view"></router-view>
     </transition>
+    <epilog></epilog>
   </div>
 </template>
-<style>
+<script>
+  import Navigation from './components/Header/Navigation.vue';
+  import Epilog from './components/Epilog.vue';
+
+  export default {
+    name: 'app',
+    components: {
+      Navigation, Epilog
+    }
+  }
+</script>
+<style lang="sass">
+  /* example variable */
+  $primary: #f00;
+  /* finally, reference bulma */
+  @import '~bulma';
 </style>

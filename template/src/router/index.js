@@ -7,6 +7,7 @@ import Home from '../views/Home.vue'
 
 export default new Router({
   mode: 'history',
+  linkActiveClass: 'is-active',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     { path: '/', component: Home }
