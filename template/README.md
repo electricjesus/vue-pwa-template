@@ -17,4 +17,4 @@ or with [yarn](https://yarnpkg.com/):
 
 ### production
 
-  npm run build
+  npm run start

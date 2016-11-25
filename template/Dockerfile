@@ -11,4 +11,4 @@ ADD . /app
 RUN npm install
 
 # @TODO: use upstart or supervisor
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]

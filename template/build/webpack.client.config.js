@@ -8,7 +8,6 @@ const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const config = Object.assign({}, base, {
   resolve: {
     alias: Object.assign({}, base.resolve.alias, {
-      'create-api': './create-api-client.js'
     })
   },
   plugins: (base.plugins || []).concat([
@@ -49,9 +48,7 @@ if (process.env.NODE_ENV === 'production') {
     // this is needed in webpack 2 for minifying CSS
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    }),
-    // dedupe
-    new webpack.optimize.DedupePlugin(),
+    }),    
     // minify JS
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -59,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new SWPrecachePlugin({
-      cacheId: 'vue-hn',
+      cacheId: '{{ name }}',
       filename: 'service-worker.js',
       dontCacheBustUrlsMatching: /./,
       staticFileGlobsIgnorePatterns: [/index\.html$/, /\.map$/]
