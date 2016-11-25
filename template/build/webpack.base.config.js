@@ -28,7 +28,7 @@ module.exports = {
     rules: [
       {
         enforce: "pre",
-        test: /\.js$/,
+        test: /\.(js|vue)$/,
         loader: "eslint-loader",
         exclude: /node_modules/
       },
